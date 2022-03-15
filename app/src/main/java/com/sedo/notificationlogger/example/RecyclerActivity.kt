@@ -2,6 +2,7 @@ package com.sedo.notificationlogger.example
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -22,19 +23,32 @@ class RecyclerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycleer)
         recyclerView = findViewById(R.id.recyclerView)
-        NotificationLoggerSender(this).send(LoggerModel().apply {
-            title = "Hi"
-            subtitle = "ok mate"
-            key = "2011"
-            description = "Welcome Back"
-            status = LoggerModel.Status.Requested.mode.toString()
-            date = Date()
-            data = "no data available"
-
-        })
+        sendNotificationData()
         setUpAdapter()
     }
 
+    private fun sendNotificationData(){
+        val a = object : CountDownTimer(60000,500){
+            override fun onTick(millisUntilFinished: Long) {
+                NotificationLoggerSender(this@RecyclerActivity).send(LoggerModel().apply {
+                    title = "Hi"
+                    subtitle = "ok mate"
+                    key = "2011"
+                    description = "Welcome Back"
+                    status = LoggerModel.Status.Requested.mode.toString()
+                    date = Date()
+                    data = "no data available"
+
+                })
+            }
+
+            override fun onFinish() {
+
+            }
+
+        }
+        a.start()
+    }
     private fun setUpAdapter() {
         sampleRecyclerAdapter = SampleRecyclerAdapter(this)
         recyclerView.adapter = sampleRecyclerAdapter
