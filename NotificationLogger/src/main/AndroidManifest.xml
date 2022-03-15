@@ -5,6 +5,10 @@
     <application
         android:allowBackup="false"
         android:supportsRtl="true">
+        <provider
+            android:name="com.sedo.notificationlogger.data.models.LoggerContentProvider"
+            android:authorities="${applicationId}.notificationlogger.provider"
+            android:exported="false" />
         <activity
             android:name="com.sedo.notificationlogger.ui.logger.MainActivity"
             android:label="@string/logger_name"

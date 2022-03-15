@@ -5,6 +5,12 @@
       <map>
         <entry key="..\:/TechZone Work/NotificationsLogger/NotificationLogger/src/main/res/drawable-anydpi-v21/chuck_ic_delete_white_24dp.xml" value="0.20833333333333334" />
         <entry key="..\:/TechZone Work/NotificationsLogger/NotificationLogger/src/main/res/drawable-anydpi-v21/chuck_ic_https_grey_24dp.xml" value="0.20833333333333334" />
+        <entry key="..\:/TechZone Work/NotificationsLogger/NotificationLogger/src/main/res/drawable-anydpi-v21/logger_ic_delete_white_24dp.xml" value="0.20833333333333334" />
+        <entry key="..\:/TechZone Work/NotificationsLogger/NotificationLogger/src/main/res/drawable-anydpi-v21/logger_ic_https_grey_24dp.xml" value="0.20833333333333334" />
+        <entry key="..\:/TechZone Work/NotificationsLogger/NotificationLogger/src/main/res/drawable-anydpi-v21/logger_ic_notification_white_24dp.xml" value="0.20833333333333334" />
+        <entry key="..\:/TechZone Work/NotificationsLogger/NotificationLogger/src/main/res/drawable-anydpi-v21/logger_ic_search_white_24dp.xml" value="0.20833333333333334" />
+        <entry key="..\:/TechZone Work/NotificationsLogger/NotificationLogger/src/main/res/drawable-anydpi-v21/logger_ic_share_white_24dp.xml" value="0.20833333333333334" />
+        <entry key="..\:/TechZone Work/NotificationsLogger/NotificationLogger/src/main/res/drawable/logger_ic_notification_white_24dp.xml" value="0.20833333333333334" />
         <entry key="..\:/TechZone Work/NotificationsLogger/NotificationLogger/src/main/res/layout/chuck_activity_main.xml" value="0.12771739130434784" />
         <entry key="..\:/TechZone Work/NotificationsLogger/NotificationLogger/src/main/res/layout/notification_logger_activity_transaction.xml" value="0.12771739130434784" />
         <entry key="..\:/TechZone Work/NotificationsLogger/NotificationLogger/src/main/res/layout/notification_logger_fragment_transaction_list.xml" value="0.12771739130434784" />
