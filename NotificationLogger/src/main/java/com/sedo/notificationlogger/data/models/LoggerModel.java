@@ -40,7 +40,8 @@ public class LoggerModel {
             "description",
             "status",
             "key",
-            "data"
+            "data",
+            "keyToSearch",
     };
 
     private static final SimpleDateFormat TIME_ONLY_FMT = new SimpleDateFormat("HH:mm:ss", Locale.US);
@@ -52,6 +53,7 @@ public class LoggerModel {
     private String key;
     private String data;
     private String status;
+    private String keyToSearch;
     @Index
     private Date date;
 
@@ -134,4 +136,11 @@ public class LoggerModel {
         return "0";
     }
 
+    public String getKey_to_search() {
+        return keyToSearch;
+    }
+
+    public void setKeyToSearch(String keyToSearch) {
+        this.keyToSearch = keyToSearch;
+    }
 }
