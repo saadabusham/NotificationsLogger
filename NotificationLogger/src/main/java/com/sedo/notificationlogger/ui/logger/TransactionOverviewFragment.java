@@ -18,7 +18,7 @@ public class TransactionOverviewFragment extends Fragment implements Transaction
     TextView subtitle;
     TextView key;
     TextView status;
-    TextView data;
+    TextView description;
     TextView requestTime;
     TextView responseTime;
     TextView duration;
@@ -41,7 +41,7 @@ public class TransactionOverviewFragment extends Fragment implements Transaction
         subtitle = (TextView) view.findViewById(R.id.subtitle);
         key = (TextView) view.findViewById(R.id.key);
         status = (TextView) view.findViewById(R.id.status);
-        data = (TextView) view.findViewById(R.id.data);
+        description = (TextView) view.findViewById(R.id.description);
         requestTime = (TextView) view.findViewById(R.id.request_time);
         responseTime = (TextView) view.findViewById(R.id.response_time);
         duration = (TextView) view.findViewById(R.id.duration);
@@ -66,7 +66,7 @@ public class TransactionOverviewFragment extends Fragment implements Transaction
             subtitle.setText(transaction.getSubtitle());
             key.setText(transaction.getKey());
             status.setText(LoggerModel.Status.fromInt(Integer.parseInt(transaction.getStatus())).name());
-            data.setText(transaction.getData());
+            description.setText(transaction.getDescription());
             requestTime.setText(transaction.getRequestStartTimeString());
             responseTime.setText(transaction.getRequestEndTimeString());
             duration.setText(transaction.getDurationString());

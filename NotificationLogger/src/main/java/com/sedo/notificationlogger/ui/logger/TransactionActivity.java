@@ -132,7 +132,7 @@ public class TransactionActivity extends BaseActivity implements LoaderManager.L
     private void setupViewPager(ViewPager viewPager) {
         adapter = new Adapter(getSupportFragmentManager());
         adapter.addFragment(new TransactionOverviewFragment(), getString(R.string.logger_overview));
-        adapter.addFragment(TransactionPayloadFragment.newInstance(TYPE_REQUEST), getString(R.string.logger_request));
+//        adapter.addFragment(TransactionPayloadFragment.newInstance(TYPE_REQUEST), getString(R.string.logger_request));
         adapter.addFragment(TransactionPayloadFragment.newInstance(TYPE_RESPONSE), getString(R.string.logger_data));
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new SimpleOnPageChangedListener() {

@@ -70,10 +70,10 @@ public class TransactionPayloadFragment extends Fragment implements TransactionF
         if (isAdded() && transaction != null) {
             switch (type) {
                 case TYPE_REQUEST:
-                    setText(transaction.getTitle(),transaction.getDescription(),true);
+                    setText(transaction.getTitle(),transaction.getData(),true);
                     break;
                 case TYPE_RESPONSE:
-                    setText(transaction.getTitle(),transaction.getDescription(),true);
+                    setText(transaction.getTitle(),transaction.getData(),true);
                     break;
             }
         }

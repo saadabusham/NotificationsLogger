@@ -109,11 +109,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/logger_data"
+                android:text="@string/logger_description"
                 style="@style/Logger.TextAppearance.Label"/>
 
             <TextView
-                android:id="@+id/data"
+                android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 style="@style/Logger.TextAppearance.Value"

@@ -16,6 +16,7 @@
     <string name="logger_request_size">Request size</string>
     <string name="logger_request_time">Request time</string>
     <string name="logger_data">Data</string>
+    <string name="logger_description">Description</string>
     <string name="logger_response_size">Response size</string>
     <string name="logger_response_time">Response time</string>
     <string name="logger_search">Search</string>
