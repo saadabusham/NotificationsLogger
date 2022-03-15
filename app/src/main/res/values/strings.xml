@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Context Menu</string>
+    <string name="app_name">Notification Logger</string>
     <!--    Context Menu    -->
     <string name="menu_close">Close</string>
     <string name="menu_view">View</string>

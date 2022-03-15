@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sedo.notificationlogger">
+
+    <application
+        android:allowBackup="false"
+        android:supportsRtl="true">
+        <activity
+            android:name="com.sedo.notificationlogger.ui.logger.MainActivity"
+            android:label="@string/logger_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.sedo.notificationlogger.task"
+            android:theme="@style/Logger.Theme" />
+        <activity
+            android:name="com.sedo.notificationlogger.ui.logger.TransactionActivity"
+            android:parentActivityName="com.sedo.notificationlogger.ui.logger.MainActivity"
+            android:theme="@style/Logger.Theme" />
+
+        <service
+            android:name="com.sedo.notificationlogger.utils.heplers.ClearTransactionsService"
+            android:exported="false" />
+    </application>
+</manifest>

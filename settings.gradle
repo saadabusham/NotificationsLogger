@@ -1,3 +1,3 @@
-include ':ContextMenu'
+include ':NotificationLogger'
 include ':app'
-rootProject.name = "Context Menu"
+rootProject.name = "Notification Logger"

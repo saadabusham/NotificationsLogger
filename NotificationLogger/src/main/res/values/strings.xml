@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="logger_body_content_truncated">\n\n--- Content truncated ---</string>
+    <string name="logger_body_omitted">(encoded or binary body omitted)</string>
+    <string name="logger_body_unexpected_eof">\n\n--- Unexpected end of content ---</string>
+    <string name="logger_browse_sql_database">Browse SQLite database</string>
+    <string name="logger_clear">Clear</string>
+    <string name="logger_duration">Duration</string>
+    <string name="logger_subtitle">Subtitle</string>
+    <string name="logger_name">Notification Logger</string>
+    <string name="logger_no">No</string>
+    <string name="logger_notification_title">Recording HTTP activity</string>
+    <string name="logger_overview">Overview</string>
+    <string name="logger_key">Key</string>
+    <string name="logger_request">Request</string>
+    <string name="logger_request_size">Request size</string>
+    <string name="logger_request_time">Request time</string>
+    <string name="logger_data">Data</string>
+    <string name="logger_response_size">Response size</string>
+    <string name="logger_response_time">Response time</string>
+    <string name="logger_search">Search</string>
+    <string name="logger_share">Share</string>
+    <string name="logger_share_as_curl">Share as curl command</string>
+    <string name="logger_share_as_text">Share as text</string>
+    <string name="logger_ssl">SSL</string>
+    <string name="logger_status">Status</string>
+    <string name="logger_total_size">Total size</string>
+    <string name="logger_title">Title</string>
+    <string name="logger_yes">Yes</string>
+    <string name="notification_category">Notification Logger HTTP notifications</string>
+</resources>
