@@ -115,10 +115,10 @@ public class TransactionListFragment extends Fragment implements
         loader.setUri(LoggerContentProvider.TRANSACTION_URI);
         if (!TextUtils.isEmpty(currentFilter)) {
             if (TextUtils.isDigitsOnly(currentFilter)) {
-                loader.setSelection("name LIKE ?");
+                loader.setSelection("title LIKE ?");
                 loader.setSelectionArgs(new String[]{ currentFilter + "%" });
             } else {
-                loader.setSelection("name LIKE ?");
+                loader.setSelection("title LIKE ?");
                 loader.setSelectionArgs(new String[]{ "%" + currentFilter + "%" });
             }
         }
