@@ -53,14 +53,7 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
                 final ViewHolder holder = (ViewHolder) view.getTag();
                 holder.title.setText(transaction.getTitle());
                 holder.start.setText(transaction.getRequestStartTimeString());
-                if (Integer.parseInt(transaction.getStatus()) == LoggerModel.Status.Complete.getMode()) {
-                    holder.key.setText(transaction.getKey());
-                } else {
-                    holder.key.setText(null);
-                }
-                if (Integer.parseInt(transaction.getStatus()) == LoggerModel.Status.Failed.getMode()) {
-                    holder.key.setText("!!!");
-                }
+                holder.key.setText(transaction.getKey());
                 setStatusColor(holder, transaction);
                 holder.transaction = transaction;
                 holder.view.setOnClickListener(new View.OnClickListener() {

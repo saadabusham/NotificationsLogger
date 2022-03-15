@@ -25,7 +25,7 @@ class RecyclerActivity : AppCompatActivity() {
         NotificationLoggerSender(this).send(LoggerModel().apply {
             title = "Hi"
             subtitle = "ok mate"
-            key = "success"
+            key = "2011"
             description = "Welcome Back"
             status = LoggerModel.Status.Requested.mode.toString()
             date = Date()

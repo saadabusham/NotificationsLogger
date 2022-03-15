@@ -9,7 +9,7 @@
     <string name="logger_subtitle">Subtitle</string>
     <string name="logger_name">Notification Logger</string>
     <string name="logger_no">No</string>
-    <string name="logger_notification_title">Recording HTTP activity</string>
+    <string name="logger_notification_title">Recording Data</string>
     <string name="logger_overview">Overview</string>
     <string name="logger_key">Key</string>
     <string name="logger_request">Request</string>

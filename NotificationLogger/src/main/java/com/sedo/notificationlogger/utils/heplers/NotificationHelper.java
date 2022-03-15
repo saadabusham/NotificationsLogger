@@ -22,7 +22,7 @@ import java.lang.reflect.Method;
 public class NotificationHelper {
 
     private static final String CHANNEL_ID = "notificationlogger";
-    private static final int NOTIFICATION_ID = 1138;
+    private static final int NOTIFICATION_ID = 11385;
     private static final int BUFFER_SIZE = 10;
 
     private static final LongSparseArray<LoggerModel> transactionBuffer = new LongSparseArray<>();
