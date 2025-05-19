@@ -63,7 +63,7 @@ public class NotificationHelper {
     public synchronized void show(LoggerModel transaction) {
         addToBuffer(transaction);
         if (!BaseActivity.isInForeground()) {
-            NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
+            NotificationCompat.Builder builder = new NotificationCompat.Builder(context,CHANNEL_ID)
                     .setContentIntent(PendingIntent.getActivity(context, 0, NotificationLogger.getLaunchIntent(context), 0))
                     .setLocalOnly(true)
                     .setSmallIcon(R.drawable.logger_ic_notification_white_24dp)
@@ -99,7 +99,7 @@ public class NotificationHelper {
     private NotificationCompat.Action getClearAction() {
         CharSequence clearTitle = context.getString(R.string.logger_clear);
         Intent deleteIntent = new Intent(context, ClearTransactionsService.class);
-        PendingIntent intent = PendingIntent.getService(context, 11, deleteIntent, PendingIntent.FLAG_ONE_SHOT);
+        PendingIntent intent = PendingIntent.getService(context, 11, deleteIntent, PendingIntent.FLAG_ONE_SHOT | PendingIntent.FLAG_IMMUTABLE);
         return new NotificationCompat.Action(R.drawable.logger_ic_delete_white_24dp,
                 clearTitle, intent);
     }
