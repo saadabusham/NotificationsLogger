@@ -64,7 +64,7 @@ public class NotificationHelper {
         addToBuffer(transaction);
         if (!BaseActivity.isInForeground()) {
             NotificationCompat.Builder builder = new NotificationCompat.Builder(context,CHANNEL_ID)
-                    .setContentIntent(PendingIntent.getActivity(context, 0, NotificationLogger.getLaunchIntent(context), 0))
+                    .setContentIntent(PendingIntent.getActivity(context, 0, NotificationLogger.getLaunchIntent(context), PendingIntent.FLAG_ONE_SHOT | PendingIntent.FLAG_IMMUTABLE))
                     .setLocalOnly(true)
                     .setSmallIcon(R.drawable.logger_ic_notification_white_24dp)
                     .setColor(ContextCompat.getColor(context, R.color.colorPrimary))
